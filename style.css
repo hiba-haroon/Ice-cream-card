@@ -1,0 +1,6 @@
+.buy-now:hover{
+     transition-duration: 1s;
+     transform: scale(1.1);
+     font-weight: bold;
+     color: #d6a45f;
+}
