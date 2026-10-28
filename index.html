@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+<!-- Navbar start -->
+      <nav
+         class="flex py-2 px-4 md:px-8 bg-white border-b border-neutral-300 min-h-[68px] relative z-20"
+         aria-label="Main navigation">
+         <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-4 w-full">
+            <a href="#"
+               class="min-w-9 inline-block focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-800 rounded-lg">
+               <span class="text-4xl font-bold text-[#572a25]">Scoops <span class="text-[#d6a45f]">.</span></span>
+            </a>
+   
+            <div id="collapseMenu" tabindex="-1"
+               class="hidden lg:block max-lg:bg-white max-lg:border-l max-lg:border-neutral-300 max-lg:w-1/2 max-lg:fixed max-lg:top-0 max-lg:right-0 max-lg:h-full max-lg:shadow-xl max-lg:overflow-auto max-sm:w-full z-50 outline-none">
+   
+               <ul
+                  class="flex flex-col gap-8 font-semibold text-sm text-neutral-900 lg:flex-row max-lg:p-6">
+                  <li>
+                     <a href="#"
+                        class="text-xl hover:underline hover:text-[#d6a45f] hover:font-bold rounded-lg"
+                        aria-current="page">Home</a>
+                  </li>
+                  <li>
+                     <a href="#"
+                        class="text-xl hover:underline hover:text-[#d6a45f] hover:font-bold rounded-lg">Shop</a>
+                  </li>
+                  <li>
+                     <a href="#"
+                        class="text-xl hover:underline hover:text-[#d6a45f] hover:font-bold rounded-lg">Blog</a>
+                  </li>
+                  <li>
+                     <a href="#"
+                        class="text-xl hover:underline hover:text-[#d6a45f] hover:font-bold rounded-lg">Page</a>
+                  </li>
+                  <li>
+                     <a href="#"
+                        class="text-xl hover:underline hover:text-[#d6a45f] hover:font-bold rounded-lg">Contact Us</a>
+                  </li>
+               </ul>
+            </div>
+   
+            <div class="flex items-center gap-6">
+               <button class="cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-800 rounded-lg">
+                  <span class="sr-only">Search</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192.904 192.904"
+                     class="size-5 fill-neutral-900" aria-hidden="true">
+                     <path
+                        d="m190.707 180.101-47.078-47.077c11.702-14.072 18.752-32.142 18.752-51.831C162.381 36.423 125.959 0 81.191 0 36.422 0 0 36.423 0 81.193c0 44.767 36.422 81.187 81.191 81.187 19.688 0 37.759-7.049 51.831-18.751l47.079 47.078a7.474 7.474 0 0 0 5.303 2.197 7.498 7.498 0 0 0 5.303-12.803zM15 81.193C15 44.694 44.693 15 81.191 15c36.497 0 66.189 29.694 66.189 66.193 0 36.496-29.692 66.187-66.189 66.187C44.693 147.38 15 117.689 15 81.193z">
+                     </path>
+                  </svg>
+                </button>
+    <div class="flex items-center gap-4 pr-2">
+            <a href="#"
+               class="flex flex-col items-center justify-center gap-0.5 text-[13px] font-semibold text-black dark:hover:text-[#d6a45f] hove:underline rounded-lg">
+               <div class="relative">
+                  <svg xmlns="http://www.w3.org/2000/svg"
+                     class="cursor-pointer fill-current dark:fill-current inline w-5 h-5" viewBox="0 0 64 64"
+                     aria-hidden="true">
+                     <path
+                        d="M45.5 4A18.53 18.53 0 0 0 32 9.86 18.5 18.5 0 0 0 0 22.5C0 40.92 29.71 59 31 59.71a2 2 0 0 0 2.06 0C34.29 59 64 40.92 64 22.5A18.52 18.52 0 0 0 45.5 4ZM32 55.64C26.83 52.34 4 36.92 4 22.5a14.5 14.5 0 0 1 26.36-8.33 2 2 0 0 0 3.27 0A14.5 14.5 0 0 1 60 22.5c0 14.41-22.83 29.83-28 33.14Z"
+                        data-original="#000000" />
+                  </svg>
+                  <span
+                     class="absolute left-auto -ml-1 -top-0.5 rounded-full bg-red-500 px-1 py-0 text-xs text-white font-medium">7</span>
+               </div>
+               <span class="hover:underline text-1xl">Wishlist</span>
+            </a>
+
+            <a href="#"
+               class="flex flex-col items-center justify-center gap-0.5 text-[13px] font-semibold text-black dark:hover:text-[#d6a45f] hover:underline rounded-lg">
+               <div class="relative">
+                  <svg xmlns="http://www.w3.org/2000/svg"
+                     class="cursor-pointer fill-current dark:fill-current inline w-5 h-5" viewBox="0 0 489 489"
+                     aria-hidden="true">
+                     <path
+                        d="m440.1 422.7-28-315.3c-.6-7-6.5-12.3-13.4-12.3h-57.6C340.3 42.5 297.3 0 244.5 0s-95.8 42.5-96.6 95.1H90.3c-7 0-12.8 5.3-13.4 12.3l-28 315.3c0 .4-.1.8-.1 1.2 0 35.9 32.9 65.1 73.4 65.1h244.6c40.5 0 73.4-29.2 73.4-65.1 0-.4 0-.8-.1-1.2zM244.5 27c37.9 0 68.8 30.4 69.6 68.1H174.9c.8-37.7 31.7-68.1 69.6-68.1zm122.3 435H122.2c-25.4 0-46-16.8-46.4-37.5l26.8-302.3h45.2v41c0 7.5 6 13.5 13.5 13.5s13.5-6 13.5-13.5v-41h139.3v41c0 7.5 6 13.5 13.5 13.5s13.5-6 13.5-13.5v-41h45.2l26.9 302.3c-.4 20.7-21.1 37.5-46.4 37.5z"
+                        data-original="#000000" />
+                  </svg>
+                  <span
+                     class="absolute left-auto -ml-1 -top-0.5 rounded-full bg-red-500 px-1 py-0 text-xs text-white font-medium">3</span>
+               </div>
+               <span class="hover:underline text-1xl">Add To Cart</span>
+            </a>
+         </div>
+    </div>
+            </div>
+         </div>
+      </nav>
+   </header>
+<!-- Navbar end -->
+<!-- main section start -->
+
+<br>
+<section class="text-gray-600 body-font">
+  <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+    <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+      <h1 class=" text-5xl mb-4 text-[#4b2920] font-bold">WELCOME TO<br>OUR <span class="text-[#d6a45f]">ICE-CREAM</span><br>WORLD</h1>
+      <br>
+      <p class="mb-8 leading-relaxed text-[#8e5a4c]">Indulge in a testy journey of flavour! Discover Creamy, Delicious, ice-cream <br>crafted to bring joy toevery 
+         <span class="text-[#d6a45f]"><u class="font-bold">Scoop</u></span> welcome to our sweet <br> escape..</p>
+      <div class="flex justify-center">
+        <br>
+        <button class=" buy-now inline-flex text-[#d6a45f] bg-[#401f17] py-3 px-6 focus:outline-none rounded">Buy Now</button>
+      </div>
+    </div>
+    <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+      <img class="object-cover object-center rounded" alt="hero" src="./53aa4faa-3444-4572-9658-fbe599ef2891_removalai_preview.png">
+    </div>
+  </div>
+</section>
+
+
+</body>
+</html>
